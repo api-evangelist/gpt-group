@@ -1,0 +1,14 @@
+generated: '2026-10-21'
+method: none
+status: none
+note: >-
+  Checked, nothing there. GPT Group (gpt.com.au) publishes no MCP server, hosted or local.
+  A web search for a GPT Group MCP server or developer API returned only unrelated
+  third-party "GPT MCP" projects. Pre-flight contract discovery on gpt.com.au,
+  www.gpt.com.au and api.com.au found no OpenAPI, AsyncAPI, GraphQL or MCP surface
+  (verdict absent), so there are no operations to derive a candidate tool list from.
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched

@@ -1,0 +1,16 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/gpt-group/integrations
+- https://n8n.io/integrations/gpt-group/
+- https://composio.dev/toolkits/gpt-group
+- https://monid.ai/tools/gpt-group
+checked:
+- https://composio.dev/toolkits/gpt-group
+- https://monid.ai/tools/gpt-group
+- https://n8n.io/integrations/gpt-group/
+- https://zapier.com/apps/gpt-group/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

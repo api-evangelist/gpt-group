@@ -1,0 +1,53 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 3
+  own: 2
+  other_domain: 1
+  platform: 0
+  roles:
+  - api
+  - other
+  - website
+hosts:
+- host: api.com.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.au
+  role: api
+  relation: other-domain
+- host: gpt.com.au
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: gpt.com.au
+  role: other
+  relation: own
+- host: www.gpt.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - Blog
+  - Newsroom
+  - Support
+  - Careers
+  - InvestorRelations
+  - Sustainability
+  - TermsOfService
+  - PrivacyPolicy
+  serves: []
+  registrable_domain: gpt.com.au
+  role: website
+  relation: own

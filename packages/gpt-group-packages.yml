@@ -1,0 +1,17 @@
+name: GPT Group packages
+generated: '2026-10-21'
+method: none
+note: >-
+  Checked, nothing there. GPT Group is an ASX-listed real estate investment manager and publishes no
+  developer API, documentation, SDK or CLI. No first-party package found; a web search for a GPT Group
+  API/SDK returned only third-party market-data listings for the GPT.AX ticker (not first-party).
+checked:
+- url: https://registry.npmjs.org/gpt-group
+  status: 404
+- url: https://pypi.org/pypi/gpt-group/json
+  status: 404
+- url: https://www.gpt.com.au/developers
+  status: 404
+- url: https://www.gpt.com.au/api
+  status: 404
+packages: []

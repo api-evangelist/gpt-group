@@ -1,0 +1,90 @@
+generated: '2026-10-21'
+method: searched
+probe: true
+source: https://www.gpt.com.au/privacy-policy
+jurisdiction_framework: Australian Privacy Act 1988 / Australian Privacy Principles (APPs)
+pages_read:
+- url: https://www.gpt.com.au/privacy-policy
+  http_status: 200
+  fetched: '2026-10-21'
+- url: https://www.gpt.com.au/terms-conditions
+  http_status: 200
+  fetched: '2026-10-21'
+signals:
+  data_subject_request:
+    url: https://www.gpt.com.au/privacy-policy
+    section: '9. How can I access and correct my personal information?'
+    channel: GPT Group Privacy Officer (contact details in section 11 of the policy)
+    rights_named: [access, correction]
+    escalation: Office of the Australian Information Commissioner
+    evidence:
+    - source: https://www.gpt.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "9.1 Access You have a right to request access to the personal information we hold about you."
+    - source: https://www.gpt.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "To access your personal information, please contact the GPT Group Privacy Officer using the details provided in Section 11 below."
+    - source: https://www.gpt.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "You have a right to ask us to correct the personal information we hold about you."
+    - source: https://www.gpt.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "If your complaint is not resolved by our Privacy Officer, you can refer it to the Office of the Australian Information Commissioner."
+    note: >-
+      APP-style access and correction rights routed to a named Privacy Officer, with a possible fee for
+      access (corrections free) and OAIC escalation. No deletion or portability right is named and no
+      response SLA is stated.
+  data_residency:
+    url: https://www.gpt.com.au/privacy-policy
+    section: '6. Disclosure of personal information overseas'
+    countries_named: [Singapore, United States of America, Hong Kong, Japan, Germany, Netherlands, Belgium, India]
+    evidence:
+    - source: https://www.gpt.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "We may disclose your personal information to recipients located outside Australia who provide goods or services to us."
+    - source: https://www.gpt.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "For example, we may disclose your personal information to third parties who are located in countries like Singapore, the United States of America, Hong Kong, Japan, Germany, the Netherlands, Belgium and India, who provide cloud and data storage services, IT support services and other third party services to us."
+    note: >-
+      No residency commitment: the policy discloses that personal data may leave Australia and gives an
+      illustrative ("for example", "like") list of recipient countries for cloud/storage and IT services,
+      conditioned on reasonable steps to ensure APP compliance by the recipient.
+  subprocessors:
+    url: https://www.gpt.com.au/privacy-policy
+    section: '5.3 Service providers'
+    list_type: categories (plus two named registry operators); no full subprocessor list published
+    evidence:
+    - source: https://www.gpt.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "GPT’s Securityholder and Unitholder registers are maintained by external service providers MUFG Corporate Markets (for GPT itself) and BoardRoom Pty Limited (for the Wholesale Funds)."
+    - source: https://www.gpt.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "We may also exchange personal information with our service providers and contractors such as organisations who provide archival, auditing, professional advisory (including legal, accounting and business consulting), debt collection, banking, online payment processing, marketing, advertising, communication, mail house, delivery, recruitment, call centre, contact management;"
+    note: >-
+      Processors are described by category; only the securityholder/unitholder registry operators are named.
+      This is not a maintained subprocessor list with change notification.
+  data_retention:
+    url: https://www.gpt.com.au/privacy-policy
+    section: '8. How long can we keep your personal information?'
+    evidence:
+    - source: https://www.gpt.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "Personal information is retained for as long as it is necessary for the identified purposes, to the extent necessary for purposes reasonably related to those identified purposes (for example, resolving disputes) or as required by law."
+    note: >-
+      The quoted sentence closes section 7 (security) immediately before the section 8 heading.
+      Purpose-bound retention with destruction or de-identification once no longer needed and not legally
+      required; no fixed retention periods are published.
+notes: >-
+  The Privacy Policy and Terms & Conditions (both linked from the gpt.com.au footer) were read in full. Neither
+  page speaks to incident/breach notification to customers, Global Privacy Control, AI transparency,
+  accessibility conformance, or any other catalog signal, so none is recorded. The Terms only cross-refer to
+  the Privacy Statement and state that browsing data is collected.

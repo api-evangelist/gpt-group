@@ -1,23 +1,95 @@
 aid: gpt-group
+
 name: GPT Group
-description: 'GPT Group is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: The GPT Group (GPT) is one of Australia's leading real estate investment managers, listed on the Australian Securities Exchange (ASX), with assets under management of $41.6 billion across a diverse portfolio of retail, office, logistics and student accommodation assets. It traces its heritage to the General Property Trust, launched in 1971 as Australia's first listed property trust. Surfaced via the API Evangelist harvest backlog (australia-apidays-2026); its website publishes no public developer API, documentation or developer portal.
+
 url: https://raw.githubusercontent.com/api-evangelist/gpt-group/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Real Estate
+- Property Investment
+- REIT
+- Funds Management
+- Commercial Property
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.gpt.com.au/themes/custom/gpt_theme/logo.svg
+
 common:
+- type: Hosts
+  url: hosts/gpt-group-hosts.yml
+- type: DomainSecurity
+  url: security/gpt-group-domain-security.yml
 - type: Website
-  url: https://gpt.com.au/
+  url: https://www.gpt.com.au/
+- type: Blog
+  url: https://www.gpt.com.au/news-insights/blog
+- type: Newsroom
+  url: https://www.gpt.com.au/office/news
+- type: Support
+  url: https://www.gpt.com.au/contact
+- type: Careers
+  url: https://www.gpt.com.au/about-us/careers
+- type: InvestorRelations
+  url: https://www.gpt.com.au/investor-centre
+- type: Sustainability
+  url: https://www.gpt.com.au/sustainability
+- type: TermsOfService
+  url: https://www.gpt.com.au/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.gpt.com.au/privacy-policy
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website gpt.com.au identifies itself as GPT ('About Us | GPT'; General Property Trust heritage, ASX-listed). No developer portal, API docs or API reference found on the site.
+  evidence:
+  - url: https://www.gpt.com.au/
+    status: 200
+  - url: https://www.gpt.com.au/about-us
+    status: 200
+  - url: https://www.gpt.com.au/contact
+    status: 200
+  - url: https://www.gpt.com.au/news-insights/blog
+    status: 200
+  - url: https://www.gpt.com.au/privacy-policy
+    status: 200
+  - url: https://www.gpt.com.au/terms-conditions
+    status: 200
+  - url: https://www.gpt.com.au/investor-centre
+    status: 200
+  - url: https://www.gpt.com.au/sustainability
+    status: 200
+  - url: https://www.gpt.com.au/about-us/careers
+    status: 200
+  - url: https://www.gpt.com.au/themes/custom/gpt_theme/logo.svg
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic
